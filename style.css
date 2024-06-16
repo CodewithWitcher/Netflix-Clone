@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: "Playwrite NL", cursive; */
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assests/img/front\ logo.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 720px;
+    position: relative;
+}
+
+.main .box {
+    height: 720px;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 900px;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 65px;
+
+}
+
+nav img {
+    color: red;
+    width: 155px;
+    position: relative;
+    z-index: 1;
+
+}
+
+nav button {
+    font-family: "Play÷write NL", cursive;
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    font-family: "Outfit", sans-serif;
+    height: calc(100% - 62px);
+    color: white;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 23px;
+    padding: 0px 30px;
+}
+
+.hero> :first-child {
+    font-weight: 800;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(94, 91, 91);
+    opacity: 0.2;
+}
+
+.btn {
+    padding: 8px 15px;
+    font-weight: bold;
+    background-color: rgb(23, 23, 23, 0.2);
+    color: white;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 9px 40px;
+    font-size: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero-buttons2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+}
+.hero-buttons2 input{
+       color: white;
+       padding: 6px 31px 12px 9px;
+       font-size: 20px;
+       border-radius: 4px;
+       background-color: rgb(23, 23, 23, 0.7);
+       border: 1px solid rgb(220, 220, 220, 0.6);
+    }
+
+.main input {
+    color: white;
+    padding: 6px 31px 12px 9px;
+    font-size: 20px;
+    line-height: 1.5;
+    border: 1px solid rgb(220, 220, 220, 0.6);
+    border-radius: 4px;
+    background-color: rgb(23, 23, 23, 0.7);
+}
+
+.btn-red-sm {
+    background-color: red;
+    padding: 9px;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.btn-en {
+    border: 1px solid rgb(220, 220, 220, 0.9);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+@media screen and (max-width 1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+
+.sec img {
+    position: relative;
+}
+
+.secimg img {
+    width: 35vw;
+    position: relative;
+    z-index: 10;
+}
+
+#video1 video {
+    position: absolute;
+    width: 405px;
+    top: 785px;
+    left: 787px;
+}
+#video2 video {
+    position: absolute;
+    width: 316px;
+    top: 1526px;
+    left: 813px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+section.first>div :nth-child(1) {
+    font-family: "Outfit", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+section.first>div :nth-child(2) {
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+}
+
+.feq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.feq {
+    background-color: black;
+    color: white;
+    padding: 35px;
+}
+
+.feqbox:hover {
+    background-color: #414141;
+}
+
+.feqbox svg {
+    filter: invert(1);
+}
+
+.feqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    background-color: #2d2d2d;
+    justify-content: space-between;
+    padding: 25px;
+    max-width: 80vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60VW;
+    margin: auto;
+    padding: 34px;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+footer.question {
+    padding: 34px 0px;
+}
+
+@media screen and (max-width 1300px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
